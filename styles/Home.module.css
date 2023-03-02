@@ -14,10 +14,6 @@
   margin: 0 auto;
 }
 
-.image {
-  margin-bottom: 1.8rem;
-}
-
 .containerfakeButtons {
   display: flex;
   align-items: center;
