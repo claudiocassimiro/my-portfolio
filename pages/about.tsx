@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import MoreLinks from '../components/MoreLinks'
 import SearchInput from '../components/SearchInput'
 import styles from '../styles/about.module.css'
 
@@ -19,6 +20,7 @@ const About = () => {
             <SearchInput value="Sobre mim" />
           </div>
         </div>
+        <MoreLinks />
       </header>
       <main className={styles.main}>
         <p className={styles.findedResultsText}>
