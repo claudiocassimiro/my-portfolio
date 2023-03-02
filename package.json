@@ -1,12 +1,13 @@
 {
-  "name": "next-project-basic-configuration",
+  "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@commitlint/cli": "^17.3.0",
