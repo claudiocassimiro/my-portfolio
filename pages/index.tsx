@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useWindowSize } from '../utils/helpers'
-import { AiOutlineSearch } from 'react-icons/ai'
+import SearchInput from '../components/SearchInput'
 
 export default function Home() {
   const { isDesktop } = useWindowSize()
@@ -16,10 +16,7 @@ export default function Home() {
           height={isDesktop ? 113 : 56}
         />
 
-        <div className={styles.containerInput}>
-          <AiOutlineSearch className={styles.searchIcon} size={25} />
-          <input className={styles.input} type="text" />
-        </div>
+        <SearchInput />
 
         <div className={styles.containerfakeButtons}>
           <span className={styles.fakeButtons}>Software Engineer</span>
