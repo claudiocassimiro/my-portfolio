@@ -54,6 +54,38 @@ const About = () => {
               Native | TypeScript | NestJS | NextJS | Java | Python |
             </p>
 
+            <div className={styles.containerAboutMe}>
+              <h2 className={styles.bodyTitle}>Sobre min</h2>
+              <div className={styles.wrapper}>
+                <p className={styles.description}>
+                  Desenvolvedor de Software, apaixonado por tecnologia e
+                  preocupado por desenvolver as melhores soluções. Sempre
+                  agregando valor para às pessoas usuárias, fazendo uso da
+                  tecnologia como ferramenta principal. Tenho experiência no
+                  mercado como desenvolvedor full-stack, isso quer dizer que
+                  posso atuar tanto no front-end quanto no back-end. Dentre as
+                  tecnologias que tenho domínio estão: React, TypeScript,
+                  Node.js, JavaScript, Express.js, Redux, GraphQL, SQL, NoSQL,
+                  Git. Tenho experiencia com TDD (Test-Driven Development) e
+                  configuração de CI/CD (Continuous Integration/Continuous
+                  Deployment) com github actions Sou um profissional muito
+                  proativo e colaborativo, minha criatividade é meu ponto forte.
+                  Tenho habilidades de comunicação, liderança e resolução de
+                  problemas. tenho inglês avançado e muita sede de conhecimento,
+                  convido você a ler um pouco sobre as recomendações que colegas
+                  de equipe forneceram no meu{' '}
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/claudiocassimiro/"
+                    rel="referrer noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+
             <div className={styles.containerExperience}>
               <h2 className={styles.bodyTitle}>Experiencias</h2>
               <div className={styles.wrapper}>
