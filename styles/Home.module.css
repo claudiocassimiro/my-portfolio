@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: space-around;
   width: 70%;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: 0 auto;
 }
 
@@ -55,4 +55,15 @@
   background-color: #ccc;
   text-align: center;
   font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .fakeButtons {
+    width: 15rem;
+    font-size: 1.6rem;
+  }
+
+  .containerInput {
+    margin-bottom: 2rem;
+  }
 }
