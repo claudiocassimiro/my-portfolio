@@ -6,13 +6,12 @@ import MoreLinks from '../components/MoreLinks'
 export default function Home() {
   return (
     <div className={styles.container}>
+      <div className={styles.containerMoreLinks}>
+        <MoreLinks />
+      </div>
       <main className={styles.main}>
-        <div className={styles.containerMoreLinks}>
-          <MoreLinks />
-        </div>
         <ClaudioLogo />
         <SearchInput />
-
         <div className={styles.containerfakeButtons}>
           <span className={styles.fakeButtons}>Software Engineer</span>
           <span className={styles.fakeButtons}>Web - Mobile</span>
