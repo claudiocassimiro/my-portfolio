@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.containerImageAndInput {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.4rem;
+  width: 60%;
+}
+
+.image {
+  margin-right: 3rem;
+}
+
+.containerSearchInput {
+  padding-top: 1.3rem;
+  width: 100%;
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+.findedResultsText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #acacac;
+}
+
+.findedResultContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.eu {
+  border-radius: 50%;
+}
+
+.containerSiteInfo {
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #424242;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.3rem;
+}
+
+.bodyTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  color: #8ab4f8;
+}
+
+.bodySubTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #616161;
+}
+
+.containerExperience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.wrapper {
+  margin: 1.5rem 0;
+}
+
+.jobTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  max-width: 50rem;
+}
