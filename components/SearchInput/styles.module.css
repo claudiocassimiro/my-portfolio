@@ -1,0 +1,26 @@
+.containerInput {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 0.8rem;
+  left: 1.2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1.2rem;
+  padding-left: 4.2rem;
+  border-radius: 2.5rem;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 1024px) {
+  .containerInput {
+    margin-bottom: 2rem;
+  }
+}
