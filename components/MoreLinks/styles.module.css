@@ -1,0 +1,13 @@
+.moreLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  max-width: 15rem;
+  padding: 1rem;
+}
+
+.image {
+  border-radius: 50%;
+  cursor: pointer;
+}
