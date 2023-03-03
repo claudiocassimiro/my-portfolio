@@ -15,6 +15,7 @@
 
 .image {
   margin-right: 1.5rem;
+  padding-bottom: 0.8rem;
 }
 
 .containerSearchInput {
@@ -86,7 +87,8 @@
   color: #616161;
 }
 
-.containerExperience {
+.containerExperience,
+.containerAboutMe {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -107,4 +109,10 @@
   font-size: 1.4rem;
   line-height: 2.4rem;
   max-width: 50rem;
+}
+
+@media (min-width: 1024px) {
+  .image {
+    padding-bottom: 1rem;
+  }
 }
