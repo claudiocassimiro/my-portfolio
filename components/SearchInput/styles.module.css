@@ -19,6 +19,34 @@
   border: 1px solid #ccc;
 }
 
+.suggestionsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 0.8rem;
+  margin-top: 0.5rem;
+  min-height: 11rem;
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.suggestionText {
+  color: #323232;
+  margin-left: 0.5rem;
+}
+
 @media (min-width: 1024px) {
   .containerInput {
     margin-bottom: 2rem;
