@@ -45,7 +45,7 @@ const SearchInput = ({ value = '' }: SearchInputProps) => {
   const handleBlur = () => {
     setTimeout(() => {
       setShownSuggestions(false)
-    }, 125)
+    }, 250)
   }
 
   const redirectUserToPageSuggest = (e: KeyboardEvent<HTMLInputElement>) => {
