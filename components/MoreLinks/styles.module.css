@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 30%;
+  width: 25%;
   max-width: 15rem;
   padding: 1rem;
 }
@@ -10,4 +10,10 @@
 .image {
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .moreLinks {
+    padding-right: 2rem;
+  }
 }
