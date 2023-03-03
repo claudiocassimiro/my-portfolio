@@ -6,7 +6,7 @@ import Link from 'next/link'
 const MoreLinks = () => {
   return (
     <div className={styles.moreLinks}>
-      <CgMenuGridO size={40} />
+      <CgMenuGridO size={25} />
       <Link
         target="_blank"
         href="https://www.linkedin.com/in/claudiocassimiro/"
@@ -16,8 +16,8 @@ const MoreLinks = () => {
           className={styles.image}
           src="/images/eu.webp"
           alt="Claudio icon"
-          width={48}
-          height={48}
+          width={32}
+          height={32}
         />
       </Link>
     </div>
