@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, KeyboardEvent, useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { MdOutlineWatchLater } from 'react-icons/md'
 import styles from './styles.module.css'
+import { useRouter } from 'next/router'
 
 interface SearchInputProps {
   value?: string
@@ -15,6 +16,7 @@ const DEFAULT_SUGGESTION_ITEMS = [
 ]
 
 const SearchInput = ({ value = '' }: SearchInputProps) => {
+  const router = useRouter()
   const [inputValue, setInputValue] = useState(value)
   const [showSuggestions, setShownSuggestions] = useState(false)
   const [suggestionsArray, setSuggestionsArray] = useState(
@@ -46,6 +48,12 @@ const SearchInput = ({ value = '' }: SearchInputProps) => {
     }, 125)
   }
 
+  const redirectUserToPageSuggest = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (suggestionsArray.length === 1 && e.code === 'Enter') {
+      router.push(suggestionsArray[0].href)
+    }
+  }
+
   return (
     <div className={styles.containerInput}>
       <AiOutlineSearch className={styles.searchIcon} size={25} />
@@ -57,6 +65,7 @@ const SearchInput = ({ value = '' }: SearchInputProps) => {
         onChange={(e) => handleSuggestions(e)}
         onBlur={() => handleBlur()}
         onClick={() => setShownSuggestions(true)}
+        onKeyUp={(e) => redirectUserToPageSuggest(e)}
       />
       {showSuggestions ? (
         <div className={styles.suggestionsContainer}>
