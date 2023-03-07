@@ -30,13 +30,19 @@ const About = () => {
           </div>
 
           <div className={styles.body}>
-            <h1 className={styles.bodyTitle}>
-              Claudio Cassimiro - Software Engineer
-            </h1>
-            <p className={styles.bodySubTitle}>
-              Software Engineer | Professor de Programação | React | React
-              Native | TypeScript | NestJS | NextJS | Java | Python |
-            </p>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/claudiocassimiro/"
+              rel="referrer noreferrer"
+            >
+              <h1 className={styles.bodyTitle}>
+                Claudio Cassimiro - Software Engineer
+              </h1>
+              <p className={styles.bodySubTitle}>
+                Software Engineer | Professor de Programação | React | React
+                Native | TypeScript | NestJS | NextJS | Java | Python |
+              </p>
+            </a>
 
             <div className={styles.containerAboutMe}>
               <h2 className={styles.bodyTitle}>Sobre min</h2>
