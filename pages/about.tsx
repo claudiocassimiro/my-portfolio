@@ -1,29 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import MoreLinks from '../components/MoreLinks'
-import SearchInput from '../components/SearchInput'
+import PageHeader from '../components/PageHeader'
 import styles from '../styles/about.module.css'
 
 const About = () => {
   return (
     <div className={styles.about}>
-      <header className={styles.header}>
-        <div className={styles.containerImageAndInput}>
-          <Link href="/" className={styles.imageContainer}>
-            <Image
-              src="/images/claudio-icon.webp"
-              alt="Claudio icon"
-              width={92}
-              height={30}
-            />
-          </Link>
-
-          <div className={styles.containerSearchInput}>
-            <SearchInput value="Sobre mim" />
-          </div>
-        </div>
-        <MoreLinks />
-      </header>
+      <PageHeader value="Sobre mim" />
       <main className={styles.main}>
         <p className={styles.findedResultsText}>
           Apenas 1 resultado encontrado (0,48 segundos)
