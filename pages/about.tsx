@@ -8,7 +8,7 @@ const About = () => {
       <PageHeader value="Sobre mim" />
       <main className={styles.main}>
         <p className={styles.findedResultsText}>
-          Apenas 1 resultado encontrado (0,48 segundos)
+          2 resultados encontrados (0,48 segundos)
         </p>
 
         <div className={styles.findedResultContainer}>
