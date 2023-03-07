@@ -11,6 +11,7 @@ const ClaudioLogo = () => {
       alt="Claudio icon"
       width={isDesktop ? 417 : 160}
       height={isDesktop ? 113 : 56}
+      priority
     />
   )
 }
