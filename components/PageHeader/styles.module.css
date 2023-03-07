@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerImageAndInput {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.4rem;
+  width: 70%;
+  max-width: 60rem;
+}
+
+.imageContainer {
+  margin-right: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.containerSearchInput {
+  padding-top: 1.3rem;
+  width: 100%;
+}
