@@ -12,7 +12,10 @@ interface SearchInputProps {
 const DEFAULT_SUGGESTION_ITEMS = [
   { suggestion: 'Sobre mim', href: '/about' },
   { suggestion: 'Projetos', href: '/projects' },
-  { suggestion: 'Contato', href: '/contact' },
+  {
+    suggestion: 'Contato',
+    href: 'https://www.linkedin.com/in/claudiocassimiro/',
+  },
 ]
 
 const SearchInput = ({ value = '' }: SearchInputProps) => {
@@ -49,8 +52,20 @@ const SearchInput = ({ value = '' }: SearchInputProps) => {
   }
 
   const redirectUserToPageSuggest = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (suggestionsArray.length === 1 && e.code === 'Enter') {
+    if (
+      suggestionsArray.length === 1 &&
+      suggestionsArray[0].suggestion !== 'Contato' &&
+      e.code === 'Enter'
+    ) {
       router.push(suggestionsArray[0].href)
+    }
+
+    if (
+      suggestionsArray.length === 1 &&
+      suggestionsArray[0].suggestion === 'Contato' &&
+      e.code === 'Enter'
+    ) {
+      window.open(suggestionsArray[0].href, '_blank')
     }
   }
 
@@ -72,7 +87,11 @@ const SearchInput = ({ value = '' }: SearchInputProps) => {
           {suggestionsArray.map(({ suggestion, href }) => (
             <div className={styles.suggestion} key={suggestion}>
               <MdOutlineWatchLater />
-              <Link className={styles.suggestionText} href={href ?? ''}>
+              <Link
+                className={styles.suggestionText}
+                target={suggestion === 'Contato' ? '_blank' : ''}
+                href={href ?? ''}
+              >
                 {suggestion}
               </Link>
             </div>
