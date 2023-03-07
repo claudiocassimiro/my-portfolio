@@ -60,6 +60,7 @@
   font-weight: 500;
   line-height: 2.4rem;
   color: #616161;
+  text-align: justify;
 }
 
 .containerExperience,
@@ -84,6 +85,7 @@
   font-size: 1.4rem;
   line-height: 2.4rem;
   max-width: 50rem;
+  text-align: justify;
 }
 
 @media (min-width: 1024px) {
