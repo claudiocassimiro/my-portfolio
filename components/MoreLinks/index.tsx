@@ -2,11 +2,20 @@ import styles from './styles.module.css'
 import { CgMenuGridO } from 'react-icons/cg'
 import Image from 'next/image'
 import Link from 'next/link'
+import cn from 'classnames'
 
-const MoreLinks = () => {
+interface MoreLinksProps {
+  homePage?: boolean
+}
+
+const MoreLinks = ({ homePage = false }: MoreLinksProps) => {
   return (
-    <div className={styles.moreLinks}>
-      <CgMenuGridO size={25} />
+    <div
+      className={cn(styles.moreLinks, {
+        [styles.homePageStyles]: homePage,
+      })}
+    >
+      <CgMenuGridO size={25} className={styles.menuGrid} />
       <Link
         target="_blank"
         href="https://www.linkedin.com/in/claudiocassimiro/"
