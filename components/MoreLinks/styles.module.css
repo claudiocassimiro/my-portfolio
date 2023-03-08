@@ -20,9 +20,54 @@
   cursor: pointer;
 }
 
+.containerMenu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #ccc;
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  width: 60%;
+  min-height: 15rem;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.homePageContainerMenu {
+  top: 4.5rem;
+}
+
+.containerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .containerMenu {
+    width: 30%;
+  }
+}
+
 @media (min-width: 1024px) {
   .moreLinks {
     padding-right: 2rem;
     max-width: 12rem;
+  }
+
+  .containerMenu {
+    width: 25rem;
+    right: 1rem;
   }
 }
