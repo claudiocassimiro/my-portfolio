@@ -6,9 +6,7 @@ import MoreLinks from '../components/MoreLinks'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.containerMoreLinks}>
-        <MoreLinks />
-      </div>
+      <MoreLinks homePage />
       <main className={styles.main}>
         <ClaudioLogo />
         <SearchInput />
