@@ -1,10 +1,18 @@
 .moreLinks {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 25%;
-  max-width: 15rem;
-  padding: 1rem;
+  max-width: 8rem;
+  padding: 1rem 0;
+}
+
+.homePageStyles {
+  align-self: flex-end;
+}
+
+.menuGrid {
+  margin-left: 2rem;
 }
 
 .image {
@@ -15,5 +23,6 @@
 @media (min-width: 1024px) {
   .moreLinks {
     padding-right: 2rem;
+    max-width: 12rem;
   }
 }
