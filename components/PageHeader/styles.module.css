@@ -1,15 +1,19 @@
 .header {
+  width: 100%;
+  max-width: 144rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
 }
 
 .containerImageAndInput {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 70%;
-  max-width: 60rem;
+  width: 100%;
 }
 
 .imageContainer {
@@ -20,4 +24,5 @@
 .containerSearchInput {
   padding-top: 1.3rem;
   width: 100%;
+  max-width: 40rem;
 }
